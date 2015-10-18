@@ -1,0 +1,75 @@
+html, body {
+	height: 100%;
+	background:rgba(69,69,69,1);
+	padding:20px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+
+/* mailbox window
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.mailbox {
+	background:#f7f7f7;
+	height:100%;
+	border-radius:10px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.mailbox .toolbar {
+	background:#e7e7e7;
+	height:6%;
+	min-height:50px;
+	width:100%;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.mailbox .toolbar .buttons {
+	top:50%;
+	position: relative;
+	transform: translateY(-50%);
+	margin-left:8px;
+}
+
+.mailbox .toolbar .buttons div {
+	width:16px;
+	height:16px;
+	border-radius:50%;
+	background-color:#000;
+	display:inline-block;
+	margin-left:8px;
+}
+
+.mailbox .toolbar .buttons .close {
+	background: #ff5f56;
+}
+
+.mailbox .toolbar .buttons .minimize {
+	background: #ffc02f;
+}
+
+.mailbox .toolbar .buttons .maximize {
+	background: #d1d1d1;
+}
+
+/* mailbox header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.content {
+	width:100%;
+	height:90%;
+	background:#fff;
+}
+
+.header {
+	height:8%;
+	background:#f1f1f1;
+}
+
