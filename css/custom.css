@@ -1,13 +1,12 @@
 html, body {
 	height: 100%;
 	background:rgba(69,69,69,1);
-	padding:20px;
+	padding:2em;
 }
 
 * {
 	box-sizing: border-box;
 }
-
 
 
 /* mailbox window
@@ -16,7 +15,7 @@ html, body {
 .mailbox {
 	background:#f7f7f7;
 	height:100%;
-	border-radius:10px;
+	border-radius:1rem;
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
@@ -27,15 +26,15 @@ html, body {
 	height:6%;
 	min-height:50px;
 	width:100%;
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
+	border-top-right-radius: 1rem;
+	border-top-left-radius: 1rem;
 }
 
 .mailbox .toolbar .buttons {
 	top:50%;
 	position: relative;
 	transform: translateY(-50%);
-	margin-left:8px;
+	margin-left:1rem;
 }
 
 .mailbox .toolbar .buttons div {
@@ -44,7 +43,7 @@ html, body {
 	border-radius:50%;
 	background-color:#000;
 	display:inline-block;
-	margin-left:8px;
+	margin-left:0.8rem;
 }
 
 .mailbox .toolbar .buttons .close {
@@ -69,7 +68,68 @@ html, body {
 }
 
 .header {
-	height:8%;
+	height:6rem;
 	background:#f1f1f1;
 }
 
+.header-content {
+	top:50%;
+	position: relative;
+	transform: translateY(-50%);
+}
+
+.logo {
+	padding-left:2.4rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight:bold;
+	font-size:1.9rem;
+	display:inline;
+
+}
+
+.logo span {
+	letter-spacing:0.08rem;
+	color:#bdbdbd;
+}
+
+.search {
+	display:inline;
+	padding-left:3.5rem;
+	line-height: 6rem;
+}
+
+.search input {
+	display:inline;
+	margin:0;
+	width:35%;
+	height:3.4rem;
+	border-top-right-radius: 0rem;
+	border-bottom-right-radius: 0rem;
+
+}
+
+.search button {
+	margin: 0 0 0 -5px;
+	border-top-left-radius: 0rem;
+	border-bottom-left-radius: 0rem;
+	border:0px;
+	background:#387ff4;
+	color:#fff;
+	height:3.4rem;
+}
+
+.account {
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	display:inline-block;
+	background:#387ff4;
+	text-align:center;
+	color:#fff;
+	font-weight:bold;
+	padding-top:2px;
+	position:absolute;
+	right:2.4rem;
+	top:50%;
+	transform: translateY(-50%);
+}
