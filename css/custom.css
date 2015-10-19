@@ -171,7 +171,7 @@ html, body {
 
 .button-bar button {
 	height:3rem;
-	line-height:3rem;	
+	line-height:3.3rem;	
 	border:1px solid #DADADA;
 	background:#f6f6f6;
 	color:#f1f1f1;
@@ -189,15 +189,27 @@ html, body {
 /* mailbox panels
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+
+
 .panels {
 	overflow-y:auto;
-	padding:2.4rem;
+	padding: 0 2.4rem; 
+	height:80%;
+	height: calc(100% - 10.4rem);
+
 }
 
-.nav-panel {
-	background:#000;
+.panels div {
 	height:100%;
-	max-width:15rem;
+	padding:2rem 0.5rem;
+}
+
+.panels div:first-child {
+	padding-left:0;
+}
+
+.nav-panel, .email-panel {
+	border-right:1px solid #f0f0f0;
 }
 
 .nav-panel button {
@@ -208,8 +220,34 @@ html, body {
 	padding: 0 2rem;
 }
 
-.nav-panel {
-	background:#000;
-	height:100%;
-	max-width:15rem;
+.nav-panel ul {
+	list-style:none;
+	padding-top:0.3rem;
+}
+
+.nav-panel ul li {
+	margin-bottom:1.3rem;
+	font-size:1.4rem;
+	color:#707070;
+	font-weight:500;
+	padding:0.5rem 0.5rem 0.5rem 0;
+}
+
+.nav-panel a {
+	color:#707070;
+	text-decoration: none;
+}
+
+.nav-panel a:link li, .nav-panel a:visited li, .nav-panel a:hover li,  {
+  	color:#707070;
+	font-weight:500;
+}
+
+.nav-panel a:hover li {
+	background:#eeeeee;
+}
+
+.nav-panel a:active li {
+	color:#f3000b;
+	font-weight:700;
 }
