@@ -77,10 +77,10 @@ html, body {
 	top:50%;
 	position: relative;
 	transform: translateY(-50%);
+	padding: 0 2.4rem;
 }
 
 .logo {
-	padding-left:2.4rem;
 	font-family: 'Roboto', sans-serif;
 	font-weight:bold;
 	font-size:1.8rem;
@@ -95,14 +95,14 @@ html, body {
 
 .search {
 	display:inline;
-	padding-left:3.5rem;
-	line-height: 6rem;
+/*	padding-left:7.5rem;
+	line-height: 6rem;*/
 }
 
 .search input {
 	display:inline;
 	margin:0;
-	width:35%;
+	width:80%;
 	height:3.4rem;
 	border-top-right-radius: 0rem;
 	border-bottom-right-radius: 0rem;
@@ -142,4 +142,74 @@ html, body {
 	font-size:1.5rem;
 	font-weight:normal;
 
+}
+
+/* mailbox button bar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.button-bar {
+	height:4.6rem;
+	line-height:4.6rem;
+	border-bottom:1px solid #f0f0f0;
+	padding: 0 2.4rem;
+}
+
+.button-bar div {
+	display:inline-block;
+}
+
+.Jmail {
+	line-height:4.6rem;
+	color:#f3000b;
+	font-weight:500;
+	font-size:1.8rem;
+}
+
+.button-bar .button-set {
+	padding-left:3rem;
+}
+
+.button-bar button {
+	height:3rem;
+	line-height:3rem;	
+	border:1px solid #DADADA;
+	background:#f6f6f6;
+	color:#f1f1f1;
+}
+
+
+.button-bar button:first-child {
+	margin-left:0;
+}
+
+.button-bar button {
+	margin: 0 0 0 1rem;
+}
+
+/* mailbox panels
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.panels {
+	overflow-y:auto;
+	padding:2.4rem;
+}
+
+.nav-panel {
+	background:#000;
+	height:100%;
+	max-width:15rem;
+}
+
+.nav-panel button {
+	height:3.4rem;
+	line-height:3.4rem;	
+	background:#f3000b;
+	color:#fff;
+	padding: 0 2rem;
+}
+
+.nav-panel {
+	background:#000;
+	height:100%;
+	max-width:15rem;
 }
